@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/oppo/sdm660-common
 
 PRODUCT_COPY_FILES += \
+    vendor/oppo/sdm660-common/proprietary/vendor/etc/firmware/cpp_firmware_v1_12_0.fw:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/cpp_firmware_v1_12_0.fw \
     vendor/oppo/sdm660-common/proprietary/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qti_libpermissions.xml \
     vendor/oppo/sdm660-common/proprietary/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qti_permissions.xml \
     vendor/oppo/sdm660-common/proprietary/lib/libFileMux.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libFileMux.so \
@@ -192,6 +193,7 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/egl/libQTapGLES.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libQTapGLES.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/egl/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libq3dtools_adreno.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/egl/libq3dtools_esx.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libq3dtools_esx.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/hw/camera.sdm660.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.sdm660.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/hw/sound_trigger.primary.sdm660.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sound_trigger.primary.sdm660.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/hw/vulkan.sdm660.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vulkan.sdm660.so \
@@ -215,7 +217,11 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/libOmxVideoDSMode.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxVideoDSMode.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/libOmxWmaDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxWmaDec.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCL.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libPolarrRender.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPolarrRender.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/libRSDriver_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/libRSDriver_adreno.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libSensorManagerHAL.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSensorManagerHAL.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libStDualCam.so:$(TARGET_COPY_OUT_VENDOR)/lib/libStDualCam.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libVDUpScale.so:$(TARGET_COPY_OUT_VENDOR)/lib/libVDUpScale.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/libacdb-fts.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdb-fts.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/libacdbloader.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbloader.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/libacdbrtac.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbrtac.so \
@@ -231,15 +237,19 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/libbluetooth_audio_session_qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session_qti.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/libbluetooth_audio_session_qti_2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session_qti_2_1.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/libc2d30_bltlib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc2d30_bltlib.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libcamera_core_hwi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamera_core_hwi.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/libcdsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdsp_default_listener.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/libcdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdsprpc.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/libcppf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcppf.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdiag.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/libdsd2pcm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsd2pcm.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsutils.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/libfastcrc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcrc.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/libfastcvadsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvadsp_stub.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/libfastcvopt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvopt.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/libfastrpc_utf_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastrpc_utf_stub.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libfilter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfilter.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libflash_pmic.so:$(TARGET_COPY_OUT_VENDOR)/lib/libflash_pmic.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/libgcs-calwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs-calwrapper.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/libgcs-ipc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs-ipc.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/libgcs-osal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs-osal.so \
@@ -247,15 +257,114 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/libgpustats.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgpustats.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/libgsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgsl.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/libhdr_tm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdr_tm.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libidl.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/libjnihelper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjnihelper.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libjpegdhw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjpegdhw.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libjpegdmahw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjpegdmahw.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libjpegehw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjpegehw.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/libllvm-glnext.so:$(TARGET_COPY_OUT_VENDOR)/lib/libllvm-glnext.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/libllvm-qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libllvm-qcom.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdmdetect.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdsprpc.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/libminkdescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libminkdescriptor.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/libminksocket.so:$(TARGET_COPY_OUT_VENDOR)/lib/libminksocket.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/libmm-color-convertor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-color-convertor.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera2_c2d_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_c2d_module.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera2_cpp_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_cpp_module.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera2_frame_algorithm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_frame_algorithm.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera2_iface_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_iface_modules.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera2_imglib_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_imglib_modules.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera2_is.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_is.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera2_isp_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_isp_modules.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera2_mct.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_mct.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera2_mct_shimlayer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_mct_shimlayer.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera2_pp_buf_mgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_pp_buf_mgr.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera2_pproc_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_pproc_modules.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera2_q3a_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_q3a_core.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera2_sensor_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_sensor_modules.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera2_stats_algorithm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_stats_algorithm.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera2_stats_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_stats_lib.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera2_stats_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_stats_modules.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_dbg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_dbg.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_eebinparse.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_eebinparse.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_eeprom_util.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_eeprom_util.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_eztune_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_eztune_module.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_facedetection_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_facedetection_lib.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_faceproc2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_faceproc2.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_hdr_gb_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_hdr_gb_lib.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_imglib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imglib.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_imglib_faceproc_adspstub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_imglib_faceproc_adspstub.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_interface.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_isp_abf48.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_abf48.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_isp_aec_bg_stats47.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_aec_bg_stats47.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_isp_bf_stats47.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_bf_stats47.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_isp_bg_stats46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_bg_stats46.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_isp_bhist_stats44.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_bhist_stats44.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_isp_black_level48.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_black_level48.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_isp_bpc48.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_bpc48.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_isp_cac47.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_cac47.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_isp_chroma_enhan40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_chroma_enhan40.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_isp_chroma_suppress40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_chroma_suppress40.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_isp_clamp_encoder40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_clamp_encoder40.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_isp_clamp_video40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_clamp_video40.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_isp_clamp_viewfinder40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_clamp_viewfinder40.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_isp_color_correct46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_color_correct46.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_isp_color_xform_encoder46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_color_xform_encoder46.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_isp_color_xform_video46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_color_xform_video46.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_isp_color_xform_viewfinder46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_color_xform_viewfinder46.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_isp_cs_stats46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_cs_stats46.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_isp_demosaic48.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_demosaic48.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_isp_demux48.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_demux48.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_isp_fovcrop_encoder46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_fovcrop_encoder46.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_isp_fovcrop_video46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_fovcrop_video46.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_isp_fovcrop_viewfinder46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_fovcrop_viewfinder46.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_isp_gamma44.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_gamma44.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_isp_gic48.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_gic48.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_isp_gtm46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_gtm46.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_isp_hdr48.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_hdr48.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_isp_hdr_be_stats46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_hdr_be_stats46.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_isp_hdr_bhist_stats44.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_hdr_bhist_stats44.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_isp_ihist_stats46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_ihist_stats46.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_isp_linearization40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_linearization40.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_isp_ltm47.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_ltm47.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_isp_luma_adaptation40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_luma_adaptation40.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_isp_mce40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_mce40.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_isp_mesh_rolloff44.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_mesh_rolloff44.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_isp_pdaf48.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_pdaf48.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_isp_pedestal_correct46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_pedestal_correct46.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_isp_rs_stats46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_rs_stats46.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_isp_scaler_encoder46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_scaler_encoder46.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_isp_scaler_video46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_scaler_video46.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_isp_scaler_viewfinder46.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_scaler_viewfinder46.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_isp_sce40.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_sce40.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_isp_snr47.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_snr47.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_isp_sub_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_isp_sub_module.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_paaf_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_paaf_lib.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_pdaf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_pdaf.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_pdafcamif.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_pdafcamif.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_ppbase_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ppbase_module.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_ppeiscore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_ppeiscore.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_quadracfa.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_quadracfa.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_sw2d_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_sw2d_lib.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_thread_services.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_thread_services.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmcamera_tintless_algo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_tintless_algo.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmjpeg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmjpeg.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmjpeg_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmjpeg_interface.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmlib2d_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmlib2d_interface.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmosal_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmosal_proprietary.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmqjpeg_codec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmqjpeg_codec.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmmqjpegdma.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmqjpegdma.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmms_gyro_vstab.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmms_gyro_vstab.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmms_gyro_vstab_auth.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmms_gyro_vstab_auth.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmms_hal_vstab.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmms_hal_vstab.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmms_warper_vstab.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmms_warper_vstab.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmpbase.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/libmulawdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmulawdec.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libocam_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libocam_common.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/liboppo_platform_hwi.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboppo_platform_hwi.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/liboppoalgolib.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboppoalgolib.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/liboppocamalgo_daemon.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboppocamalgo_daemon.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libopposfr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libopposfr.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/libqcbor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcbor.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/libqmi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/libqmi_cci.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_cci.so \
@@ -265,9 +374,14 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/libqmi_csi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_csi.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/libqmi_encdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_encdec.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/libqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmiservices.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libqomx_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqomx_core.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libqomx_jpegdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqomx_jpegdec.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libqomx_jpegenc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqomx_jpegenc.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libqomx_jpegenc_pipe.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqomx_jpegenc_pipe.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/libqseed3.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqseed3.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/libqti-perfd-client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqti-perfd-client.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/libqtigef.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqtigef.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libremosaic_daemon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libremosaic_daemon.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/librs_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/librs_adreno.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/librs_adreno_sha1.so:$(TARGET_COPY_OUT_VENDOR)/lib/librs_adreno_sha1.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/libsdm-color.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdm-color.so \
@@ -277,6 +391,7 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/libsensor1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensor1.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/libsensor_reg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensor_reg.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/libsmwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsmwrapper.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib/libstface_fd_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstface_fd_api.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/libsysmon_cdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsysmon_cdsp_skel.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinyxml2_1.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib/libvqzip.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvqzip.so \
