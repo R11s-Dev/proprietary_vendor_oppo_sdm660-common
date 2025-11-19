@@ -37,17 +37,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "IWlanService",
-	owner: "oppo",
-	apk: "proprietary/vendor/app/IWlanService/IWlanService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	soc_specific: true,
-}
-
-android_app_import {
 	name: "TimeService",
 	owner: "oppo",
 	apk: "proprietary/vendor/app/TimeService/TimeService.apk",
@@ -56,17 +45,6 @@ android_app_import {
 		enabled: false,
 	},
 	soc_specific: true,
-}
-
-android_app_import {
-	name: "QtiTelephonyService",
-	owner: "oppo",
-	apk: "proprietary/product/app/QtiTelephonyService/QtiTelephonyService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	product_specific: true,
 }
 
 android_app_import {
@@ -82,27 +60,71 @@ android_app_import {
 }
 
 android_app_import {
+	name: "DeviceInfo",
+	owner: "oppo",
+	apk: "proprietary/system_ext/app/DeviceInfo/DeviceInfo.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "QtiTelephonyService",
+	owner: "oppo",
+	apk: "proprietary/system_ext/app/QtiTelephonyService/QtiTelephonyService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "embms",
+	owner: "oppo",
+	apk: "proprietary/system_ext/app/embms/embms.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "imssettings",
+	owner: "oppo",
+	apk: "proprietary/system_ext/app/imssettings/imssettings.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
 	name: "ims",
 	owner: "oppo",
-	apk: "proprietary/product/priv-app/ims/ims.apk",
+	apk: "proprietary/system_ext/priv-app/ims/ims.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
 	privileged: true,
-	product_specific: true,
+	system_ext_specific: true,
 }
 
 android_app_import {
 	name: "qcrilmsgtunnel",
 	owner: "oppo",
-	apk: "proprietary/product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
+	apk: "proprietary/system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
 	privileged: true,
-	product_specific: true,
+	system_ext_specific: true,
 }
 
 dex_import {
@@ -122,20 +144,6 @@ dex_import {
 	name: "dpmapi",
 	owner: "oppo",
 	jars: ["proprietary/product/framework/dpmapi.jar"],
-	product_specific: true,
-}
-
-dex_import {
-	name: "qcrilhook",
-	owner: "oppo",
-	jars: ["proprietary/product/framework/qcrilhook.jar"],
-	product_specific: true,
-}
-
-dex_import {
-	name: "qti-telephony-common",
-	owner: "oppo",
-	jars: ["proprietary/product/framework/qti-telephony-common.jar"],
 	product_specific: true,
 }
 
