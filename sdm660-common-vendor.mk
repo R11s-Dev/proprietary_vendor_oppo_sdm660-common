@@ -545,6 +545,7 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/sdm660-common/proprietary/vendor/lib64/libizat_client_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_client_api.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib64/libizat_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_core.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib64/libjnihelper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjnihelper.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib64/libjnihelper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjnihelper.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib64/libkeymasterdeviceutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterdeviceutils.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib64/libkeymasterprovision.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterprovision.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib64/libkeymasterutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterutils.so \
@@ -710,6 +711,7 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/sdm660-common/proprietary/vendor/lib64/vendor.qti.ims.callinfo@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.callinfo@1.0.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib64/vendor.qti.ims.factory@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.factory@1.0.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.rcsconfig@1.0.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib64/vendor.qti.ims.rcsconfig@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.rcsconfig@1.1.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.rcsconfig@2.0.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so \
     vendor/oppo/sdm660-common/proprietary/vendor/lib64/vendor.qti.imsrtpservice@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.imsrtpservice@3.0.so \
