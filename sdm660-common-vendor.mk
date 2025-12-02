@@ -29,12 +29,13 @@ PRODUCT_COPY_FILES += \
     vendor/oppo/sdm660-common/proprietary/product/lib64/libdpmfdmgr.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libdpmfdmgr.so \
     vendor/oppo/sdm660-common/proprietary/product/lib64/libdpmframework.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libdpmframework.so \
     vendor/oppo/sdm660-common/proprietary/product/lib64/libdpmtcm.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libdpmtcm.so \
-    vendor/oppo/sdm660-common/proprietary/system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml \
-    vendor/oppo/sdm660-common/proprietary/system_ext/lib64/lib-imsvideocodec.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvideocodec.so \
-    vendor/oppo/sdm660-common/proprietary/system_ext/lib64/lib-imsvt.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvt.so \
-    vendor/oppo/sdm660-common/proprietary/system_ext/lib64/lib-imsvtutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvtutils.so \
-    vendor/oppo/sdm660-common/proprietary/system_ext/lib64/libimscamera_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimscamera_jni.so \
-    vendor/oppo/sdm660-common/proprietary/system_ext/lib64/libimsmedia_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimsmedia_jni.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib64/lib-imsvtextutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsvtextutils.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib64/lib-imsvideocodec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsvideocodec.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib64/lib-imsvt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsvt.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib64/lib-imsvtextutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsvtextutils.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib-imsvtutils.so:$(TARGET_COPY_OUT_VENDOR)/lib-imsvtutils.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib64/libimscamera_jni.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimscamera_jni.so \
+    vendor/oppo/sdm660-common/proprietary/vendor/lib64/libimsmedia_jni.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimsmedia_jni.so \
     vendor/oppo/sdm660-common/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
     vendor/oppo/sdm660-common/proprietary/vendor/bin/adpl:$(TARGET_COPY_OUT_VENDOR)/bin/adpl \
     vendor/oppo/sdm660-common/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
@@ -729,10 +730,10 @@ PRODUCT_PACKAGES += \
     CneApp \
     IWlanService \
     TimeService \
+    ims \
     QtiTelephonyService \
     dpmserviceapp \
     qcrilmsgtunnel \
-    ims \
     tcmclient \
     com.qti.dpmframework \
     dpmapi \
