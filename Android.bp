@@ -37,6 +37,17 @@ android_app_import {
 }
 
 android_app_import {
+	name: "IWlanService",
+	owner: "oppo",
+	apk: "proprietary/vendor/app/IWlanService/IWlanService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
+android_app_import {
 	name: "TimeService",
 	owner: "oppo",
 	apk: "proprietary/vendor/app/TimeService/TimeService.apk",
@@ -62,17 +73,6 @@ android_app_import {
 	name: "embms",
 	owner: "oppo",
 	apk: "proprietary/system_ext/app/embms/embms.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "imssettings",
-	owner: "oppo",
-	apk: "proprietary/system_ext/app/imssettings/imssettings.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
