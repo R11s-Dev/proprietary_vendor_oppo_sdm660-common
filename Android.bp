@@ -7765,7 +7765,7 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "liblog",
                 "libutils",
-                "vendor.qti.hardware.fm@1.0",
+                "vendor.qti.hardware.fm@1.0_vendor",
                 "android.hardware.bluetooth@1.0-impl-qti",
                 "libqmi",
                 "libqmiservices",
@@ -8662,7 +8662,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libhardware_legacy",
                 "libhardware",
-                "com.qualcomm.qti.dpm.api@1.0",
+                "com.qualcomm.qti.dpm.api@1.0_vendor",
                 "libc++",
                 "libc",
                 "libm",
@@ -11470,7 +11470,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.fm@1.0",
+    name: "vendor.qti.hardware.fm@1.0_vendor",
+    stem: "vendor.qti.hardware.fm@1.0",
     owner: "oppo",
     strip: {
         none: true,
@@ -12858,7 +12859,8 @@ prebuilt_rfsa {
 }
 
 cc_prebuilt_library_shared {
-    name: "com.qualcomm.qti.dpm.api@1.0",
+    name: "com.qualcomm.qti.dpm.api@1.0_vendor",
+    stem: "com.qualcomm.qti.dpm.api@1.0",
     owner: "oppo",
     strip: {
         none: true,
@@ -13549,7 +13551,7 @@ cc_prebuilt_binary {
                 "libqmi_client_helper",
                 "libqmiservices",
                 "libdpmqmihal",
-                "com.qualcomm.qti.dpm.api@1.0",
+                "com.qualcomm.qti.dpm.api@1.0_vendor",
                 "libc++",
                 "libc",
                 "libm",
@@ -13606,7 +13608,7 @@ cc_prebuilt_binary {
                 "libutils",
                 "libhidlbase",
                 "android.hardware.bluetooth@1.0",
-                "vendor.qti.hardware.fm@1.0",
+                "vendor.qti.hardware.fm@1.0_vendor",
                 "com.dsi.ant@1.0",
                 "vendor.qti.hardware.bluetooth_sar@1.0",
                 "vendor.qti.hardware.bluetooth_sar@1.1",
