@@ -500,7 +500,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.ims.rcsconfig@1.1 \
     vendor.qti.ims.rcsconfig@2.0 \
     vendor.qti.imsrtpservice@3.0-service-Impl \
-    vendor.qti.imsrtpservice@3.0 \
+    vendor.qti.imsrtpservice@3.0_vendor \
     vendor.qti.latency@2.0 \
     capi_v2_aptX_Classic \
     capi_v2_aptX_HD \
@@ -526,6 +526,11 @@ PRODUCT_PACKAGES += \
     libvpp_svc_skel \
     com.qualcomm.qti.dpm.api@1.0_vendor \
     fm_helium \
+    lib-imscamera \
+    lib-imsvideocodec \
+    lib-imsvt \
+    lib-imsvtextutils \
+    lib-imsvtutils \
     libdiag_system \
     libdpmctmgr \
     libdpmfdmgr \
@@ -536,6 +541,7 @@ PRODUCT_PACKAGES += \
     libimsmedia_jni \
     vendor.qti.diaghal@1.0 \
     vendor.qti.hardware.fm@1.0 \
+    vendor.qti.imsrtpservice@3.0 \
     CneApp \
     IWlanService \
     TimeService \
