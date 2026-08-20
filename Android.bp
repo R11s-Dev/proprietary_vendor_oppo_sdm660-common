@@ -5115,6 +5115,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libmmcamera_hdr_gb_lib.so",
             ],
             shared_libs: [
+                "liblog",
                 "libdl",
                 "libcutils",
                 "libstdc++_vendor",
@@ -6574,6 +6575,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libmmcamera_pdaf.so",
             ],
             shared_libs: [
+                "liblog",
                 "libcutils",
                 "libutils",
                 "libmmcamera_dbg",
@@ -6601,6 +6603,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libmmcamera_pdafcamif.so",
             ],
             shared_libs: [
+                "liblog",
                 "libcutils",
                 "libutils",
                 "libmmcamera_dbg",
@@ -10492,6 +10495,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libwvhidl.so",
             ],
             shared_libs: [
+                "libcrypto_shim",
                 "android.hardware.drm@1.0",
                 "android.hardware.drm@1.1",
                 "android.hardware.drm@1.2",
