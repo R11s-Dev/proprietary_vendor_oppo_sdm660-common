@@ -12985,6 +12985,7 @@ cc_prebuilt_library_shared {
                 "proprietary/system_ext/lib64/lib-imscamera.so",
             ],
             shared_libs: [
+                "libgui_shim",
                 "libcutils",
                 "libutils",
                 "liblog",
@@ -13037,6 +13038,7 @@ cc_prebuilt_library_shared {
                 "proprietary/system_ext/lib64/lib-imsvideocodec.so",
             ],
             shared_libs: [
+                "libgui_shim",
                 "lib-imsvtutils",
                 "lib-imsvtextutils",
                 "libcutils",
