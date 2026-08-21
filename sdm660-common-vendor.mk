@@ -115,7 +115,6 @@ PRODUCT_PACKAGES += \
     libGLESv2_adreno \
     libq3dtools_adreno \
     libq3dtools_esx \
-    sound_trigger.primary.sdm660 \
     vulkan.adreno \
     libC2D2 \
     libCB \
